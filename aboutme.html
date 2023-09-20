@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu Portfólio Pessoal">
+    <meta name="keywords" content="portfólio, HTML, CSS, JavaScript">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="stylesw.css" id="stylesheet">
+</head>
+<body>
+    <header class="rounded-header">
+        <h1>Fábio Miguel</h1>
+        <button id="theme-toggle" onclick="toggleTheme()">Alternar Modo</button>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">Sobre Mim</a></li>
+                <li><a href="main.html">Portfólio</a></li>
+                <li><a href="https://github.com/fabiomigueldp" target="_blank">GitHub</a></li>
+                <li><a href="mailto:fabiomigueldp@gmail.com">Contato</a></li>
+                <li><a href="downloads/cv.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="slider-button" id="slider-button">
+            <div class="slider-toggle" id="slider-toggle"></div>
+        </div>
+        <div class="sobre-content">
+            <div class="sobre-image">
+                <img src="me3.png" alt="Minha Foto" class="rounded-image">
+            </div>
+            <div class="sobre-text">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resto do conteúdo da página -->
+
+    <footer>
+        <p>&copy; 2023 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste obcaecati id ipsam deleniti expedita nesciunt iure nobis aliquam voluptas asperiores sunt qui, voluptatem cupiditate soluta. Omnis, modi vitae cumque numquam quae amet incidunt harum aut voluptas, fugit molestiae doloremque dolorem placeat vero non beatae soluta minima totam doloribus assumenda consequuntur nesciunt! Fugit minus unde deserunt, delectus ipsam, quod vitae tempora omnis ad repellendus officia ab dicta neque. Asperiores, repellendus eos quisquam, iure illum dolores perferendis animi iste optio id aut nisi cum corrupti similique! Quisquam commodi facilis autem laboriosam, vitae unde non voluptates optio placeat incidunt natus rem sit fuga?</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const stylesheet = document.getElementById("stylesheet");
+            if (stylesheet.href.includes("stylesw.css")) {
+                stylesheet.href = "stylesb.css";
+            } else {
+                stylesheet.href = "stylesw.css";
+            }
+        }
+    </script>
+
+</body>
+</html>

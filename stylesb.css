@@ -1,0 +1,164 @@
+/* Definindo um estilo base para a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Estilo para o cabeçalho */
+
+header {
+    background-color: #222222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Estilo para a navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #004f8a;
+}
+
+/* Estilo para seções */
+section {
+    background-color: #222222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #333333;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    text-align: left;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* Estilo para formulários */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #004f8a;
+}
+
+/* Estilo para o iframe */
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/* Estilo para a imagem arredondada */
+.rounded-image {
+    border-radius: 10px; /* Ajuste o valor conforme desejado para controlar o grau de arredondamento */
+}
+
+/* Estilo para arredondar as bordas do header */
+.rounded-header {
+    border-radius: 10px; /* Ajuste o valor conforme desejado para controlar o grau de arredondamento */
+}
+
+.iframe-section {
+    display: flex;
+    justify-content: space-between;
+    width: 800px; /* Largura da seção */
+    height: 1200px; /* Altura da seção */
+    margin: 0 auto; /* Centraliza a seção na tela */
+    background-color: #333333; /* Cor de fundo da seção (opcional) */
+    padding: 20px; /* Espaçamento interno da seção (opcional) */
+}
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu Portfólio Pessoal">
+    <meta name="keywords" content="portfólio, HTML, CSS, JavaScript">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="stylesw.css" id="stylesheet">
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header class="rounded-header">
+        <h1>Fábio Miguel</h1>
+        <button id="theme-toggle" onclick="toggleTheme()">Alternar Modo</button>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">Sobre Mim</a></li>
+                <li><a href="main.html">Portfólio</a></li>
+                <li><a href="https://github.com/fabiomigueldp" target="_blank">GitHub</a></li>
+                <li><a href="mailto:fabiomigueldp@gmail.com">Mail-To</a></li>
+                <li><a href="downloads/cv.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div>
+            <h3>Algoritmos:</h3>
+        <ol>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista1">Algoritmos_Lista1</a></li>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista2">Algoritmos_Lista2</a></li>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista3">Algoritmos_Lista3</a></li>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista4">Algoritmos_Lista4</a></li>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista5">Algoritmos_Lista5</a></li>
+            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista6">Algoritmos_Lista6</a></li>
+        </ol>
+        </div>
+    </section>
+
+
+<ul >
+
+    <li > Quatro Ilhas </li >
+    
+    <li > Zimbros </li >
+    
+    <li > Mariscal </li >
+    
+    <li > Canto Grande </li >
+    
+    </ul >
+    
+    
+    <ol >
+    
+    <li > Grêmio </li >
+    
+    <li > São Paulo </li >
+    
+    <li > Corinthians </li >
+    
+    <li > Flamengo </li >
+    
+    </ol >
+
+    <table>
+        <caption>Tabela de Dados</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form action="processar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section class="iframe-section">
+        <table>
+            <tr>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.8096744992377!2d-122.03088988466275!3d37.330509141217595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc7f3f28de209%3A0x6708efb086f8fbd7!2sApple%20Park%20Way%2C%20Cupertino%2C%20CA%2095014%2C%20USA!5e0!3m2!1sen!2s!4v1619647508065!5m2!1sen!2s"></iframe>
+                </td>
+                <td>
+                    <iframe src="https://www.lovefrom.com/"></iframe>
+                </td>
+                <td>
+                    <iframe src="https://www.youtube.com/embed/PXis0PtqdXw"></iframe>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Seu Nome</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const stylesheet = document.getElementById("stylesheet");
+            if (stylesheet.href.includes("stylesw.css")) {
+                stylesheet.href = "stylesb.css";
+            } else {
+                stylesheet.href = "stylesw.css";
+            }
+        }
+    </script>
+</body>
+</html>
