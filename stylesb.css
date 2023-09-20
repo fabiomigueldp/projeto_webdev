@@ -161,4 +161,99 @@ footer {
     padding: 20px; /* Espaçamento interno da seção (opcional) */
 }
 
+        /* Estilo para o layout flex */
+        #portfolio {
+            display: flex;
+            flex-direction: column; /* Coloca as divs em coluna */
+        }
+
+        /* Estilo para as divs internas */
+        #portfolio div {
+            margin: 10px 0; /* Espaço vertical entre as divs */
+        }
+
+        /* Estilo para o layout flex nas divs internas */
+        #portfolio div div {
+            display: flex;
+        }
+
+        /* Estilo para as divs internas lado a lado */
+        #portfolio div div > div {
+            flex: 1; /* Faz as divs ocuparem a mesma largura */
+            margin: 0 10px; /* Espaço horizontal entre as divs */
+        }
+
+
+        /* Estilo para a tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        /* Estilo para células de cabeçalho */
+        th {
+            background-color: #0078d4;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+/* Estilo para células de dados */
+td {
+    border: 1px solid #555; /* Cor da borda das células no tema escuro */
+    padding: 10px;
+    text-align: left;
+    color: #fff; /* Cor do texto nas células no tema escuro */
+}
+
+        /* Estilo para o rodapé */
+        tfoot {
+            background-color: #0078d4;
+            color: #fff;
+        }
+
+                /* Estilo para o layout de duas seções lado a lado */
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+        
+                /* Estilo para cada seção */
+                .section {
+                    flex: 1;
+                    margin: 20px;
+                    padding: 20px;
+                    border: 1px solid #222222;
+                    border-radius: 10px;
+                }
+        
+                /* Estilo para o formulário */
+                #form-section {
+                    background-color: #222222; /* Cor de fundo da seção (opcional) */
+                }
+        
+                /* Estilo para a tabela */
+                #table-section {
+                    background-color: #222222; /* Cor de fundo da seção (opcional) */
+                }
+        
+                /* Estilo para tabelas */
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+        
+                th, td {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    text-align: left;
+                }
+        
+                caption {
+                    text-align: left;
+                    font-style: italic;
+                    padding: 10px;
+                }
+
 

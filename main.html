@@ -7,59 +7,12 @@
     <meta name="keywords" content="portfólio, HTML, CSS, JavaScript">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="stylesw.css" id="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js"></script>
 </head>
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <header class="rounded-header">
         <h1>Fábio Miguel</h1>
         <button id="theme-toggle" onclick="toggleTheme()">Alternar Modo</button>
@@ -69,7 +22,7 @@
                 <li><a href="main.html">Portfólio</a></li>
                 <li><a href="https://github.com/fabiomigueldp" target="_blank">GitHub</a></li>
                 <li><a href="mailto:fabiomigueldp@gmail.com">Mail-To</a></li>
-                <li><a href="downloads/cv.pdf" download>Download CV</a></li>
+                <li><a href="downloads/poster.pdf" download>Download CV</a></li>
             </ul>
         </nav>
     </header>
@@ -77,75 +30,109 @@
     <section id="portfolio">
         <h2>Portfólio</h2>
         <div>
-            <h3>Algoritmos:</h3>
-        <ol>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista1">Algoritmos_Lista1</a></li>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista2">Algoritmos_Lista2</a></li>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista3">Algoritmos_Lista3</a></li>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista4">Algoritmos_Lista4</a></li>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista5">Algoritmos_Lista5</a></li>
-            <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista6">Algoritmos_Lista6</a></li>
-        </ol>
+            <div>
+                <div>
+                    <h3>Algoritmos:</h3>
+                    <ol>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista1">Algoritmos_Lista1</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista2">Algoritmos_Lista2</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista3">Algoritmos_Lista3</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista4">Algoritmos_Lista4</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista5">Algoritmos_Lista5</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/Algoritmos_Lista6">Algoritmos_Lista6</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Outros projetos:</h3>
+                    <ul>
+                        <li><a href="poster.pdf" target="_blank">Sistema de Compras IFC</a></li>
+                        <li><a href="https://github.com/fabiomigueldp/projeto_webdev">Portfólio de WebDev</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
+    <div class="container">
+        <section class="section" id="form-section">
+            <h2>Formulário de Contato</h2>
+            <form action="processar.php" method="post">
+                <fieldset>
+                    <legend>Entre em Contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required autofocus placeholder="Seu nome">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Seu email">
+                    <br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Digite sua mensagem"></textarea>
+                    <br>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" max="99" required placeholder="Sua idade">
+                    <br>
+                    <label for="cor">Cor Favorita:</label>
+                    <input type="color" id="cor" name="cor" value="#0078d4" required>
+                    <br>
+                    <label for="opcoes">Escolha uma opção:</label>
+                    <select id="opcoes" name="opcoes" required>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                    <br>
+                    <label for="datalist">Escolha da lista:</label>
+                    <input list="opcoes-list" id="datalist" name="datalist" required>
+                    <datalist id="opcoes-list">
+                        <option value="Opção A">
+                        <option value="Opção B">
+                        <option value="Opção C">
+                    </datalist>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        </section>
 
-<ul >
-
-    <li > Quatro Ilhas </li >
-    
-    <li > Zimbros </li >
-    
-    <li > Mariscal </li >
-    
-    <li > Canto Grande </li >
-    
-    </ul >
-    
-    
-    <ol >
-    
-    <li > Grêmio </li >
-    
-    <li > São Paulo </li >
-    
-    <li > Corinthians </li >
-    
-    <li > Flamengo </li >
-    
-    </ol >
-
-    <table>
-        <caption>Tabela de Dados</caption>
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-        </tr>
-        <tr>
-            <td>João</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>28</td>
-        </tr>
-    </table>
-
-    <section>
-        <h2>Formulário de Contato</h2>
-        <form action="processar.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+        <section class="section" id="table-section">
+            <h2>Tabela de Dados Relevantes</h2>
+            <table>
+                <caption>Tabela de Dados</caption>
+                <thead>
+                    <tr>
+                        <th>Coluna Cabeçalho 1</th>
+                        <th>Coluna Cabeçalho 2</th>
+                        <th>Coluna Cabeçalho 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Linha 1, Coluna 1</td>
+                        <td>Linha 1, Coluna 2</td>
+                        <td>Linha 1, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 2, Coluna 1</td>
+                        <td>Linha 2, Coluna 2</td>
+                        <td>Linha 2, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 3, Coluna 1</td>
+                        <td>Linha 3, Coluna 2</td>
+                        <td>Linha 3, Coluna 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>Variedade Única</td>
+                        <td>Muita Diversão</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
 
     <section class="iframe-section">
         <table>
@@ -163,11 +150,8 @@
         </table>
     </section>
 
-    </section>
-    
-
     <footer>
-        <p>&copy; 2023 Seu Nome</p>
+        <p>&copy; 2023 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste obcaecati id ipsam deleniti expedita nesciunt iure nobis aliquam voluptas asperiores sunt qui, voluptatem cupiditate soluta. Omnis, modi vitae cumque numquam quae amet incidunt harum aut voluptas, fugit molestiae doloremque dolorem placeat vero non beatae soluta minima totam doloribus assumenda consequuntur nesciunt! Fugit minus unde deserunt, delectus ipsam, quod vitae tempora omnis ad repellendus officia ab dicta neque. Asperiores, repellendus eos quisquam, iure illum dolores perferendis animi iste optio id aut nisi cum corrupti similique! Quisquam commodi facilis autem laboriosam, vitae unde non voluptates optio placeat incidunt natus rem sit fuga?</p>
     </footer>
 
     <script>
